@@ -13,7 +13,7 @@ def weather(city):
         try:
           res = requests.get(api_address)
           a = res.json()
-          st.write(a)
+          # st.write(a)
           st.header(f"Hourly Weather of city {a["city"]["name"]}")
           for i in a["list"]:
              st.subheader(i["dt_txt"])
