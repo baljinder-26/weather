@@ -38,7 +38,7 @@ imgs=base64.b64encode(data).decode()
    <source src="https://cdn.discordapp.com/attachments/1294905019388395563/1294907714929033308/4038059-hd_1280_720_30fps.mp4?ex=6780bc49&is=677f6ac9&hm=e96c0d2e6e461087d020bd630b4e0e6b833d9739b127daf3c9ff19407782456c&" type="video/mp4">
    </video>
 
- """
+   """
 
 st.markdown(video,unsafe_allow_html=True)
 
