@@ -11,36 +11,36 @@ st.title("Weather App")
 with open('rain.png','rb')as f:
     data=f.read()
 imgs=base64.b64encode(data).decode()
-css=f"""
-    <style>
-    [data-testid="stAppViewContainer"]{{
-    background-image:url('data:image/png;base64,{imgs}');
-    background-size:cover
+# css=f"""
+#     <style>
+#     [data-testid="stAppViewContainer"]{{
+#     background-image:url('data:image/png;base64,{imgs}');
+#     background-size:cover
 
-    }}
+#     }}
 
-    </style>
-"""
-# video=f"""
-#   <style>
-#   .vid{{
-
-#       position: fixed;
-# 		  right: 0;
-# 		  bottom: 0;
-#       min-width: 100%; 
-# 		  min-height: 100%;
-    
-#   }}
-#   </style>
-  
-#  <video autoplay loop muted class="vid"  >
-#   <source src="" type="video/mp4">
-#   </video>
-
+#     </style>
 # """
+ video=f"""
+   <style>
+   .vid{{
 
-# st.markdown(video,unsafe_allow_html=True)
+       position: fixed;
+		  right: 0;
+ 		  bottom: 0;
+       min-width: 100%; 
+ 		  min-height: 100%;
+    
+   }}
+   </style>
+  
+  <video autoplay loop muted class="vid"  >
+   <source src="https://cdn.discordapp.com/attachments/1294905019388395563/1294907714929033308/4038059-hd_1280_720_30fps.mp4?ex=6780bc49&is=677f6ac9&hm=e96c0d2e6e461087d020bd630b4e0e6b833d9739b127daf3c9ff19407782456c&" type="video/mp4">
+   </video>
+
+ """
+
+st.markdown(video,unsafe_allow_html=True)
 
 def weather(city):
     API_KEY = "10f1f4d38d1025e47ebc8c84cb6d893f"   #API KEy ABhijay
