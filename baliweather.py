@@ -8,27 +8,27 @@ st.set_page_config("Weather Page",page_icon=':sun_small_cloud:')
 
 
 # data-testid="stApp"
-<<<<<<< Updated upstream
+# <<<<<<< Updated upstream
 with open('rain.png','rb')as f:
     data=f.read()
 imgs=base64.b64encode(data).decode()
-=======
+# =======
 # with open('rain.png','rb')as f:
 #     data=f.read()
 # imgs=base64.b64encode(data).decode()
->>>>>>> Stashed changes
+# >>>>>>> Stashed changes
 # css=f"""
 #     <style>
 #     [data-testid="stAppViewContainer"]{{
 #     background-image:url('data:image/png;base64,{imgs}');
 #     background-size:cover
-<<<<<<< Updated upstream
+# <<<<<<< Updated upstream
 
 #     }}
 
 #     </style>
 # """
- video=f"""
+video=f"""
    <style>
    .vid{{
 
@@ -48,7 +48,7 @@ imgs=base64.b64encode(data).decode()
    """
 
 st.markdown(video,unsafe_allow_html=True)
-=======
+# =======
 
 #     }}
  
@@ -77,7 +77,7 @@ video=f"""
 
 st.markdown(video,unsafe_allow_html=True)
 st.title("Weather App")
->>>>>>> Stashed changes
+# >>>>>>> Stashed changes
 
 def weather(city):
     API_KEY = "10f1f4d38d1025e47ebc8c84cb6d893f"   #API KEy ABhijay
